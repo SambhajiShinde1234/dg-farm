@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dattaguru farm</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,600;1,300&display=swap">
+    <script src="https://kit.fontawesome.com/daa4373d70.js" crossorigin="anonymous"></script>
+
+    
+<body>
+
+
+    <section class="header">
+        <nav>
+            
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-xmark" onclick="hidemenu()"></i>
+                <ul>
+                    <li> <a href="index.html" >HOME</a> </li>
+                    <li> <a href="about.html" >ABOUT</a> </li>
+                    <li> <a href="product.html" >PRODUCT</a> </li>
+                    <li> <a href="blog.html" >BLOG</a> </li>
+                    <li> <a href="contact.html" >CONTACT</a> </li>
+                    <li> <a href="register.html" >REGISTER</a> </li>
+                </ul>
+            </div>  
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+
+
+
+    <div class="container">
+        <div class="card">
+            <div class="inner-box" id="card">
+
+               <div class="card-front">
+                      <h2>REGISTER </h2> 
+                      <form>
+                        <input type="text" class="input-box" value="" placeholder="Enter Your Name" required>
+                        <input type="text" class="input-box" value="" placeholder="Enter Your Surname" required>
+                        <input type="email" class="input-box" value="" placeholder="Enter Your Email" required>
+                        <input type="text" class="input-box" value="" placeholder="Enter Your Village Name" required>
+                        <input type="tel" class="input-box" value="" placeholder="Enter Your Contact Number" required>
+
+                        <button type="submit" value="" class="hero-btn"> SUBMIT </button>
+                      </form>
+                      <button type="button" class="btn" onclick="openBuyer()">I'M BUYER</button>
+               </div>
+
+
+               <div class="card-back">
+                   <h2>GET QOUTE </h2> 
+                   <form>
+                     <input type="text" class="input-box" value="" placeholder="Enter Your Name" required>
+                     <input type="text" class="input-box" value="" placeholder="Enter Your Surname" required>
+                     <input type="email" class="input-box" value="" placeholder="Enter Your Email" required>
+                     <input type="text" class="input-box" value="" placeholder="Enter Your Company Name" required>
+                     <input type="tel" class="input-box" value="" placeholder="Enter Your Contact Number" required>
+                     <input type="text" class="input-box" value="" placeholder="Enter Product Name " required>
+
+                     <button type="submit" class="hero-btn" value=""> GET QOUTE </button>
+                    </form>
+                   <button type="button" class="btn" onclick="openFarmer()">I'M FARMER</button>
+               </div>
+
+             </div> 
+         </div>
+     </div>
+
+
+     
+
+<section class="footer">
+    <h4>ABOUT US</h4>
+    <p>Dattagru Farmer Company is Farmer Producer Oraganization Funded By Government Of Maharashtra. <br>
+      It is an organisation of farmer-producers that provide support to small farmers with end-to-end <br>
+        services covering almost all aspects of cultivation from inputs, technical services to processing and marketing <br>
+    </p>
+
+    <h4>FOLLOW US ON</h4>
+    <br>
+        <div class="icon">
+             <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+             <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+             <a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a>
+             <a href="https://www.whatsapp.com"><i class="fa fa-whatsapp"></i></a>
+    </div>
+    <p>Made By <i class="fa fa-heart-o"></i> Dattaguru Farm</p>
+    <p>All Right Reserved © Dattaguru Farm - 2022</p>
+</section>
+
+
+<!----- Flip Register Form ----->
+
+     <script>
+         var card = document.getElementById("card");
+
+         function openFarmer(){
+             card.style.transform = "rotateY(0deg)";
+         }
+         function openBuyer(){
+             card.style.transform = "rotateY(-180deg)";
+         }
+
+     </script>
+
+     
+<!-------Javascipt for toggle------->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showmenu(){
+        navLinks.style.right = "0";
+    }
+
+    function hidemenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+
+</body>
+</html>
+
+
+
